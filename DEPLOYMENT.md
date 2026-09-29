@@ -104,15 +104,3 @@ Staging and production are separate environments; production deploys need a manu
 ## Infrastructure as code
 
 Everything above would be defined in **Terraform** (or AWS CDK), with one state per environment, so the setup is reviewable and repeatable instead of built by hand in the console.
-
-## Rough monthly cost (small production setup)
-
-| Item | Approx. |
-|---|---|
-| Fargate, 2 tasks × 0.5 vCPU / 1 GB | ~$35 |
-| ALB | ~$20 |
-| NAT Gateway | ~$35 + data |
-| CloudFront, S3, Route 53, Secrets Manager, CloudWatch | ~$10 |
-| **Total (excluding OpenAI usage)** | **~$100** |
-
-OpenAI usage is billed separately and depends on traffic; `gpt-4o-mini` keeps this low.
