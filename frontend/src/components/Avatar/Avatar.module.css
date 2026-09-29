@@ -1,0 +1,18 @@
+.avatar {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user {
+  color: var(--color-surface);
+  background: var(--color-text);
+}
+
+.assistant {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
